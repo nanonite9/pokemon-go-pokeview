@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+    {% include 'header.html' %}
+
+    <h4 class="currentPage">
+        Search for a Pokéstop/Gym or by Rating:
+    </h4>
+
+    <div id="search">
+        <form method="GET" action="search_results.php">
+            <div class="section">
+                <div class="label1">
+                    <label for="search">Place Name:</label>
+                </div>
+                <div class="label3">
+                    <input type="search" id="searchname" name="placename" placeholder="search for a stop/gym">
+                </div>
+            </div>
+            <div class="section">
+                <div class="label1">
+                    <label for="rating">Rating:</label>
+                </div>
+                <!-- by rating -->
+                <div class="label3">
+                    <select id="rating" name="rating">
+                        <option value="any">any</option>
+                        <option value="5">Golden razz berry</option>
+                        <option value="4">Razz berry</option>
+                        <option value="3">Silver pinap berry</option>
+                        <option value="2">Pinap berry</option>
+                        <option value="1">Nanab berry</option>
+                    </select>
+                </div>
+            </div><br />
+
+            <div class="section">
+                <input id="search_button" type="submit" value="Search" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

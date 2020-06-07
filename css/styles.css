@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+/* ============================== main title 1 ============================== */
+h1 {
+    background-image: url("../media/background-image-logo.jpg");
+    padding: 30px;
+    background-size: cover;
+    height: 75px;
+    color: blueviolet;
+    font-size: 30px;
+    font-family: tahoma;
+    text-align: center;
+}
+/* h2 reserved for special events */
+/* ============================== main title 2 ============================== */
+h3 {
+    font-family: tahoma; /*in the GTA*/
+    letter-spacing: 3px;
+}
+/* ============================== main title 2 ============================== */
+.header { /*in the GTA*/
+    text-align: left;
+    margin: 20px 0 0 50px; 
+    background-color: #b19cd9;
+}
+/* ============================== page title ============================== */
+h4 {
+    font-family: tahoma; /*Titles: About Us, etc.*/
+    letter-spacing: 2px;
+    text-align: left;
+    padding-left: 80px; /* roughly aligned with Home menu button at 100% */
+    font-size: 30px; 
+}
+/* ============================== menu ============================== */
+#active {
+    color: #9d29b1; /* text for current page */
+    background-color: #d4e2f9; /*bg for current page (home) on  menu*/
+    border-radius: 5px;
+}
+/* main page text */
+.welcome{
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 40px; /* welcome trainer..*/
+    letter-spacing: 1px;
+    /* ref: https://stackoverflow.com/questions/15409429/how-to-limit-text-width */
+}
+/* ============================== about page: paragraph text ============================== */
+#about {
+    font-family: Helvetica;
+    text-align: left;
+    padding-left: 80px;
+    font-size: 26px; /* welcome trainer..*/
+    letter-spacing: 1px;
+    /* cred: https://stackoverflow.com/questions/15409429/how-to-limit-text-width */
+}
+#results {
+    font-family: Helvetica;
+    text-align: left;
+    padding-left: 80px;
+    font-size: 26px; /* welcome trainer..*/
+    letter-spacing: 1px;
+    /* cred: https://stackoverflow.com/questions/15409429/how-to-limit-text-width */
+}
+/* ============================== titles of results ============================== */
+h5 {
+    font-size: 25px;
+}
+/* ============================== titles of results labels ============================== */
+h6 li {
+    display: inline;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 20px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: normal;
+    /* ref: https://www.sitepoint.com/community/t/how-do-you-unbold-headers/1684 */
+    
+}
+/* ============================== titles of results descriptions/queries ============================== */
+h7 li {
+    display: inline;
+    width: 100%;
+    border-bottom: 1px grey solid;
+    padding: 20px 0;
+    margin: 0 20px;
+    list-style: none;
+    font-size: 15px;
+    color: grey;
+}
+/* ============================== submission form ============================== */
+#submission { /* Submission form... NO LONGER BUGGY!! */
+    font-family: Helvetica;
+    text-align: left;
+    font-size: 26px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    /* cred: https://stackoverflow.com/questions/15409429/how-to-limit-text-width */
+}
+/* ============================== login form ============================== */
+#login {
+    font-family: Helvetica;
+    text-align: left;
+    padding-left: 80px;
+    margin: 8px 0;
+    font-size: 26px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 85%;
+    height: 10%;
+
+    margin-right: auto;
+}
+/* ============================== login/register form: inputs ============================== */
+input[type=text]:focus, select, textarea {
+    border: 3px solid lightpink;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #b19cd9; /* purple*/
+    border-radius: 6px;
+    resize: vertical;
+}
+input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=email], select,textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+/*copy*/
+input[type=text] {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid lightgray;
+    text-align: left;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* project 2 change */
+#search_button {
+    float: right;
+    margin-right: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: lightseagreen; /*button colour*/
+    color: floralwhite; /*font colour on button*/
+    font-size: 20px;
+    padding: 13px 18px;
+}
+
+/* ============================== search form: inputs ============================== */
+input[type=search], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+/* ============================== submission ============================== */
+label {
+    padding: 10px 10px 10px 0;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0px;
+}
+/* ============================== submission: column 1 ============================== */
+.label1 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    margin-left: 0px;
+}
+/* ============================== submission: column 2 ============================== */
+.label2 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+.label4 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+    margin-left: 80px;
+}
+/* ============================== results: city ============================== */
+.city {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* ============================== object: user ============================== */
+.user {
+    float: left;
+    width: 20%;
+    margin-top: 2px;
+}
+/* ============================== object: review column ============================== */
+.review {
+    float: left;
+    width: 70%;
+    margin-top: 2px;
+}
+/* ============================== object: rate column ============================== */
+.bryrate {
+    float: left;
+    width: 5%;
+    margin-top: 2px;
+}
+/* ============================== login form ============================== */
+#login, #registration {
+    height: 20%;
+    text-align: left;
+    padding-left: 80px;
+}
+/* ============================== search form ============================== */
+#search {
+    width: 60%;
+    height: 20%;
+    text-align: left;
+    padding-left: 80px;
+    font-family: Helvetica;
+    margin: 8px 0;
+    font-size: 26px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ============================== submission form ==============================*/
+.submit {
+    width: 85%;
+    height: 20%;
+    text-align: left;
+    padding-left: 80px; /* aligns with h4 title*/
+}
+/* ============================== line breaks after each section (no need for <br>) ============================== */
+.section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* ============================== text box for select options ============================== */
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: aliceblue;
+}
+/* ============================== menu ============================== */
+nav {
+    letter-spacing: 5px;
+    font-size: 20px;
+    max-width: initial;
+    width: 100%;
+    text-align: center;
+}
+nav ul li {
+	display: inline;
+	margin: 0 20px;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li a {
+    font-family: "Abel"; /* menu*/
+	text-decoration: none;
+	color: dimgray; /* menu */
+	font-weight: bold;
+	padding: 6px;
+}
+nav ul li a:hover {  /* menu hover */
+	color: #b19cd9; /* light purple */
+	background-color: lightpink;
+	border-radius: 3px;
+}
+/* ============================== top nav: login/register ============================== */
+.topnav1 {
+    font-family: "Abel";
+    font-weight: bold;
+    width: 8%;
+    text-align: left;
+    font-size: 10px;
+    max-width: 100%;
+    height: 25px;
+    width: 125px;
+    text-decoration: none;
+    color: floralwhite; /*text*/
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    padding: 3px 3px;
+    margin: 10px 0 0 50px;
+}
+.topnav2 {
+    font-family: "Abel";
+    font-weight: bold;
+    width: 8%;
+    text-align: left;
+    font-size: 10px;
+    max-width: 100%;
+    height: 25px;
+    width: 125px;
+
+    text-decoration: none;
+    color: floralwhite; /*text*/
+    background-color: steelblue;
+    border-radius: 5px;
+    padding: 3px 3px;
+    margin: 5px 0 0 50px;
+}
+/* ============================== regular paragraph text (welcome) ============================== */
+p { 
+	text-align: left;
+	margin-left: 50px;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+/* ============================== hyper links ============================== */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ============================== about: rating scale ============================== */
+th {
+	background-color: #ffffff; /* table title bg; white */ 
+	padding: 10px;
+	text-align: center;
+}
+td {
+	text-align: center;
+}
+table {
+	width: 70%; 
+	margin: 50px 10% 50px 10%; 
+	text-align: left;
+	font-family: tahoma;
+}
+
+tr td {
+	padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #b19cd9;
+}
+
+tr:nth-child(odd) {
+	background-color: #d4e2f9;
+}
+
+/* ============================== screen for iPhone 7 ============================== */
+@media screen and (max-width: 667px) and (min-width: 375px) {
+    img {
+        max-width: 30%;
+        height: auto;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    span {
+        text-align: center;
+        margin: 10px 10px 10px 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 0;
+        display: block;
+        border-bottom: 1px lightgray solid;
+        padding: 15px 0;
+    }
+
+    nav ul li a:hover {
+        border-radius: 0px;
+    }
+
+    nav ul li:hover {
+        background-color: lightgray;
+    }
+}
+
+/* ============================== not used this time ==============================  */
+/* input[type=radio], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+*/
+
+/* relevant code to use: 
+* {
+    box-sizing: border-box;
+}
+    */
+
+/* ============================== project 2 ==============================  */
+
+.error_message {
+    color: indianred;
+
+}
+
+#map {
+    height: 400px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+}
+
+#submit_button {
+    float: right;
+    margin-right: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: lightseagreen; /*button colour*/
+    color: floralwhite; /*font colour on button*/
+    font-size: 20px;
+    padding: 13px 18px;
+}
+
+#register_button {
+    float: right;
+    margin-right: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: lightseagreen; /*button colour*/
+    color: floralwhite; /*font colour on button*/
+    font-size: 20px;
+    padding: 13px 18px;
+}
+#login_button {
+    float: right;
+    margin-right: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: lightseagreen; /*button colour*/
+    color: floralwhite; /*font colour on button*/
+    font-size: 20px;
+    padding: 13px 18px;
+}
+#search_button {
+    float: right;
+    margin-right: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: lightseagreen; /*button colour*/
+    color: floralwhite; /*font colour on button*/
+    font-size: 20px;
+    padding: 13px 18px;
+}
+#search_index_button {
+    float: right;
+    margin-right: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: lightseagreen; /*button colour*/
+    color: floralwhite; /*font colour on button*/
+    font-size: 20px;
+    padding: 13px 18px;
+}
+.label3.gender-radio {  
+   font-size: large;
+}
+
+.error {
+    background: #c51244 !important;
+    padding: 10px !important;
+    border-radius: 0 !important;
+    position: relative;
+    display: inline-block !important;
+    box-shadow: 1px 1px 1px #aaaaaa;
+    margin-top: 10px;
+}
+
+.success {
+    background: #48f542 !important;
+    padding: 10px !important;
+    border-radius: 0 !important;
+    position: relative;
+    display: inline-block !important;
+    box-shadow: 1px 1px 1px #aaaaaa;
+    margin-top: 10px;
+}

@@ -1,0 +1,49 @@
+<!-- Header Banner -->
+<h1 class="header">
+    <a href="index.php"><img src="media/pokeview-logo.png" alt="pokemon-font" style="margin: 0 15px 15px 0;width:270px;height:auto"></a>
+</h1>
+<h3 class="header" style="color: blueviolet;">
+    in the GTA
+</h3>
+
+{% if not logged_in %}
+
+<!-- Login/Register -->
+<div class="topnav1">
+    <ul>
+        <a href="login.php">Log in</a>
+    </ul>
+</div>
+<div class="topnav2">
+    <ul>
+        <a href="registration.php">Register</a>
+    </ul>
+</div>
+<br />
+
+{% endif %}
+
+<nav>
+    <ul>
+        <li>
+            <a href="index.php">Home</a>
+        </li>
+        <li>
+            <a href="about.php">About</a>
+        </li>
+        <li>
+            <a href="search.php">Search a Pokéstop</a>
+        </li>
+        <li>
+            <a href="lure-party.php">Lure Party of the Week</a>
+        </li>
+        {% if logged_in %}
+        <li>
+            <a href="submission.php">Submit a New Stop</a>
+        </li>
+        <li>
+            <a href="logout.php">Logout</a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>

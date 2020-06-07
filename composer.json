@@ -1,0 +1,10 @@
+{
+    "name": "rathaisiva/p03",
+    "require": {
+        "twig/twig": "^2.12",
+        "aws/aws-sdk-php": "2.*"
+    },
+    "autoload": {
+        "classmap": ["templates/", "config/", "persistence/", "vendor/"]
+    }
+}

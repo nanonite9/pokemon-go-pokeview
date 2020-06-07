@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PokéView</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+{% include 'header.html' %}
+
+<div class="welcome">
+    <br>
+    <br>
+    Welcome{% if (username|length) %} {{ username }}{% else %} Trainer{% endif %}! PokéView is a safe, reliable, accurate, <br />
+    and simple-to-use rating scheme for Pokéstops and <br />
+    Gyms in Pokémon Go — an essential tool for every player. <br /> <br />
+</div>
+
+</body>
+</html>

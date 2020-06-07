@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pokéview</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    {% include 'header.html' %}
+
+    <h4 class="currentPage">{{ pokestop.location_name }}</h4>
+
+    <p>
+        <span style="float:left;">
+            <img src="image.php?id={{ pokestop.pokestop_id }}" style="margin: 0 50px 50px 0; width: 450px; height: auto; border-radius: 10px;" />
+        </span>
+    </p>
+
+    <div id="about">
+        <h7>
+            <b>Description: </b>
+            {% if pokestop.description|length %}
+                {{ pokestop.description }}
+            {% else %}
+                No description available
+            {% endif %}
+            <br>
+            <b>Average rating:</b>
+            <img src="media/rating/{{ pokestop.average_rating }}.png" style="margin:auto; width:50px; height:auto;" />
+            <br />
+            <br />
+            <b>Type: </b>{{ pokestop.location_type }}
+            <br />
+            <br />
+            <b>Location: </b><div id="location" data-latitude="{{ pokestop.latitude }}" data-longitude="{{ pokestop.longitude }}">{{ pokestop.latitude}},{{ pokestop.longitude }}</div>
+            <br />
+            <br />
+            <div id="map"></div>
+            <br />
+            <br />
+            <b>Reviews:</b>
+            <br />
+            <div id="response_message"></div>
+        </h7>
+
+        {% if logged_in %}
+
+        <div>
+            <form id="review_form" name="review_form">
+                <textarea id="review_message" name="review_message" maxlength="250" required></textarea>
+                <select id="rating" name="rating" required>
+                    <option value="5">Golden razz berry</option>
+                    <option value="4">Razz berry</option>
+                    <option value="3">Silver pinap berry</option>
+                    <option value="2">Pinap berry</option>
+                    <option value="1">Nanab berry</option>
+                </select>
+                <input type="submit" id="add_review" value="Add Review">
+            </form>
+        </div>
+
+        {% endif %}
+
+        <div id="review_list"></div>
+    </div>
+
+    <script src="js/pokestop.js" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ googleMapApiKey }}&callback=initMap" type="text/javascript"></script>
+</body>
+</html>
