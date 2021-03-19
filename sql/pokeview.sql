@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 -- Password = Ayana
 INSERT INTO `users` (`user_id`, `username`, `password`, `email`, `gender`, `dob`) VALUES
-(1, 'asapyanz', '$2y$10$FCc91VrPXdXThgSp8QNkoOY2D14Qg9cZ03jyAqxl50Tr00m7DDJ3S', 'ayanacrystal@gmail.com', 'Female', '01/01/1990');
+(1, 'nanonite9', '$2y$10$FCc91VrPXdXThgSp8QNkoOY2D14Qg9cZ03jyAqxl50Tr00m7DDJ3S', '*@*.com', 'Female', '01/01/2000');
 
 --
 -- Constraints for dumped tables
