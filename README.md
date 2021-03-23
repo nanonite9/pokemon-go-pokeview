@@ -10,4 +10,4 @@ or Raid Hour, and also connect with other trainers through Discord.
 
 ## Snippets:
 Here is a view of the home page and the about page:
-![welcome, about](media/01.gif)
+![welcome, about](https://github.com/nanonite9/pokeview/blob/master/media/01.GIF)
